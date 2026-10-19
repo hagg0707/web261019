@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -5,34 +6,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김민성 :: 내 영화 보드</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@100..900&display=swap"
         rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>내 영화 보드</h1>
-    <article class="card">
-        <img class="poster" src="https://image.tmdb.org/t/p/w342/bvVoP1t2gNvmE9ccSrqR1zcGHGM.jpg
-" alt="영화 제목 포스터">
-        <span class="badge">7.8</span>
-        <div class="info">
-            <h2>F1</h2>
-            <p class="year">2025-06-25</p>
-            <p class="overview">한때 주목받는 유망주였지만 끔찍한 사고로 F1®에서 우승하지 못하고 한순간에 추락한 드라이버 소니 헤이스. 그의 오랜 동료인 루벤 세르반테스에게 레이싱 복귀를
-                제안받으며 최하위 팀인 APXGP에 합류한다. 그러나 팀 내 떠오르는 천재 드라이버 조슈아 피어스와 소니 헤이스의 갈등은 날이 갈수록 심해지고. 설상가상 우승을 향한 APXGP 팀의 전략
-                또한 번번이 실패하며 최하위권을 벗어나지 못하고 고전하는데···
-            </p>
-        </div>
-    </article>
-    <footer>
-        <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
-            This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
-        <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
-    </footer>
-</body>
 
+    <!-- 상단 제목 및 메뉴 -->
+    <header class="top">
+        <h1>김민성 :: 내 영화 보드</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#board">영화 목록</a></li>
+                <li><a href="#footer">사이트 정보</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 히어로 배너 -->
+    <section class="hero" id="home">
+        <h2>나만의 영화 보드</h2>
+        <p>다양한 영화와 함께하는 특별한 시간</p>
+    </section>
+
+    <!-- 영화 목록 -->
+    <main>
+        <section class="board" id="board">
+
+            <!-- 스파이더맨 -->
+            <article class="card">
+                <img class="poster"
+                     src="https://image.tmdb.org/t/p/w300_and_h450_face/mt6uZzy7DAsncHlGGzMsyNgLR6v.jpg"
+                     alt="스파이더맨: 브랜드 뉴 데이 포스터">
+
+                <span class="badge">8.4</span>
+
+                <div class="info">
+                    <h2>스파이더맨: 브랜드 뉴 데이</h2>
+                    <p class="year">2026</p>
+                    <p class="overview">
+                        4년 전 소중한 사람들을 지키기 위해 모두의 기억에서 사라진 피터 파커.
+                        친절한 이웃 스파이더맨으로서 뉴욕을 지키며 고독한 삶을 살아가던 피터는
+                        어느 날 예상치 못한 DNA 변이로 인해 통제 불가능한 힘에 사로잡히고
+                        그의 진짜 정체를 알고 있는 적까지 마주하게 된다.
+                        피터는 다시 위협에 빠진 MJ와 모두를 지키기 위해 스파이더맨으로
+                        그들 앞에 서게 되는데...
+                    </p>
+                </div>
+            </article>
+
+            <!-- Matchbox 더 무비 -->
+            <article class="card">
+                <img class="poster"
+                     src="https://image.tmdb.org/t/p/w300_and_h450_face/rPx2nmRjFFpOXejRp4jV3YEOA5n.jpg"
+                     alt="Matchbox 더 무비 포스터">
+
+                <span class="badge">8.4</span>
+
+                <div class="info">
+                    <h2>Matchbox 더 무비</h2>
+                    <p class="year">2026</p>
+                    <p class="overview">
+                        유년 시절 친구들이 다시 모인다.
+                        이들의 재회는 위험한 국제 음모에 휘말리며
+                        세상을 구해야 하는 뜻밖의 상황으로 치닫는다.
+                    </p>
+                </div>
+            </article>
+
+            <!-- 인시디어스 -->
+            <article class="card">
+                <img class="poster"
+                     src="https://image.tmdb.org/t/p/w300_and_h450_face/aKkPEqUtbEtCB5WWJWanHJPFsnZ.jpg"
+                     alt="인시디어스: 그들이 넘어왔다 포스터">
+
+                <span class="badge">8.4</span>
+
+                <div class="info">
+                    <h2>인시디어스: 그들이 넘어왔다</h2>
+                    <p class="year">2026</p>
+                    <p class="overview">
+                        죽은 자들의 영역 '더 먼 곳'을 넘나들 수 있는 능력을 가진 젬마.
+                        평범한 일상을 살던 젬마와 딸 마야의 주변에 어느 날부터
+                        섬뜩한 악령의 환영들이 들이닥친다.
+                        젬마는 자신이 악령들을 현실로 불러들이는 운반자라는
+                        사실을 알게 되고, 현실과 저승의 경계는 점점 무너지는데...
+                    </p>
+                </div>
+            </article>
+
+            <!-- 오디세이 -->
+            <article class="card">
+                <img class="poster"
+                     src="https://image.tmdb.org/t/p/w300_and_h450_face/8ze9OcVuFiy94s6FFPvsn4oC2e1.jpg"
+                     alt="오디세이 포스터">
+
+                <span class="badge">8.4</span>
+
+                <div class="info">
+                    <h2>오디세이</h2>
+                    <p class="year">2026</p>
+                    <p class="overview">
+                        10년간 이어진 트로이 전쟁을 승리로 이끈 영웅 오디세우스.
+                        왕의 부재를 틈타 혼란에 빠진 왕국에서 아내 페넬로페와
+                        아들 텔레마코스에게 돌아가기 위한 여정에 나선다.
+                        그러나 그의 귀환 앞에는 거대한 폭풍과 괴물들,
+                        그리고 거스를 수 없는 운명의 시련이 기다리고 있는데...
+                    </p>
+                </div>
+            </article>
+
+            <!-- 호프 -->
+            <article class="card">
+                <img class="poster"
+                     src="https://image.tmdb.org/t/p/w300_and_h450_face/ptqlN6mDIAqJjVA86J5eOoG82zc.jpg"
+                     alt="호프 포스터">
+
+                <span class="badge">8.4</span>
+
+                <div class="info">
+                    <h2>호프</h2>
+                    <p class="year">2026</p>
+                    <p class="overview">
+                        지원해 줄 인력들은 산불을 끄러 갔고, 이젠 통신도 두절됐다.
+                        호포 출장소의 범석과 성애는 노인들뿐인 마을을 지키기 위해
+                        사투를 벌인다. 무지가 빚어낸 불행의 씨앗은 입장의 차이를 거쳐
+                        온 우주의 비극이 되고야 만다.
+                    </p>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- 하단 정보 -->
+    <footer id="footer">
+        <p>
+            이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
+        </p>
+        <p>
+            This product uses the TMDB API but is not endorsed or certified by TMDB.
+        </p>
+        <p>
+            포스터와 영화 정보:
+            <a href="https://www.themoviedb.org"
+               target="_blank"
+               rel="noopener noreferrer">TMDB</a>
+        </p>
+    </footer>
+
+</body>
 </html>
